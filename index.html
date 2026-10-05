@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Syed Jarrar Haider | BS Computer Science Portfolio</title>
+  <meta name="description" content="Portfolio of a BS Computer Science student: projects, skills and contact.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home">SJH<span>.dev</span></a>
+    <nav id="nav" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode">Dark</button>
+    <button id="menuBtn" class="icon-btn menu-btn" aria-label="Open menu" aria-expanded="false">Menu</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="hello">BS Computer Science, Semester 5</p>
+        <h1>Syed Jarrar Haider</h1>
+        <p class="lead">I build programs that work and then I try to understand why they work. Currently learning data structures, databases and web development.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">See my projects</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <pre class="code-card" aria-label="About me as code"><code id="typed"></code><span class="cursor"></span></pre>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About me</h2>
+      <div class="about-grid">
+        <p>I am a fifth-semester BS Computer Science student from Rawalpindi, Pakistan. I enjoy turning problems into small, clear programs, from C++ console tools to full web apps.</p>
+        <p>Outside lectures I solve practice problems, read about operating systems and build side projects. I am looking for an internship where I can learn from a real engineering team.</p>
+      </div>
+      <ul class="stats">
+        <li><strong id="cProjects">0</strong> projects built</li>
+        <li><strong data-count="5">0</strong> semesters done</li>
+        <li><strong data-count="4">0</strong> languages used</li>
+      </ul>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skills" id="skillList"></div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="filters" id="filters" role="group" aria-label="Filter projects"></div>
+      <div class="projects" id="projectGrid"></div>
+    </section>
+
+    <section id="education" class="section">
+      <h2>Education and courses</h2>
+      <ol class="timeline">
+        <li><time>2023 to present</time><h3>BS Computer Science</h3><p>Your University, Semester 5. Focus on software engineering and databases.</p></li>
+        <li><time>Completed</time><h3>Core courses</h3><p>Programming Fundamentals, OOP, Data Structures, Discrete Mathematics, Digital Logic Design.</p></li>
+        <li><time>This semester</time><h3>Current courses</h3><p>Database Systems, Operating Systems, Web Engineering, Computer Networks.</p></li>
+      </ol>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <p>Have an internship, project or question? Send a message and I will reply by email.</p>
+        <form id="contactForm" novalidate>
+          <label>Name <input type="text" id="name" required></label>
+          <label>Email <input type="email" id="email" required></label>
+          <label>Message <textarea id="message" rows="4" required></textarea></label>
+          <p id="formMsg" role="status"></p>
+          <button class="btn primary" type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built with HTML, CSS and JavaScript by Syed Jarrar Haider. <a href="https://github.com/yourusername">GitHub</a> · <a href="https://www.linkedin.com/in/syedjarrar5/">LinkedIn</a></p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
